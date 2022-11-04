@@ -1,0 +1,21 @@
+package com.sj.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+//below class added for mockito demo only
+@Service
+public class ReviewService {
+	
+	    @Autowired
+	    BookService bookService;
+	    
+	    
+	    public String getBookTitleById(int id) {
+	    	 
+	    	   return bookService.getTitle(id);
+	    	
+	    }
+	    
+	    
+
+}

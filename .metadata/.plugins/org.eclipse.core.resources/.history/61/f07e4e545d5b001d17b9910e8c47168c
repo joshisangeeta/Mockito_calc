@@ -1,0 +1,5 @@
+package com.sj.service;
+
+public interface BookService {
+
+}

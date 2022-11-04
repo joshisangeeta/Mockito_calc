@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RestTemplateDemoApplicationTests (1)" project="RestTemplateDemo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sj.resttemplate.RestTemplateDemoApplicationTests" time="0.0">
+    <testcase name="whenUserIdIsProvided_thenRetrievedNameIsCorrect" classname="com.sj.resttemplate.RestTemplateDemoApplicationTests" time="0.0"/>
+    <testcase name="contextLoads" classname="com.sj.resttemplate.RestTemplateDemoApplicationTests" time="0.0"/>
+  </testsuite>
+</testrun>

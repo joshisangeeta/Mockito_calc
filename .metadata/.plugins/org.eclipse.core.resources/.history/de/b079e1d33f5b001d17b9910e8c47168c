@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.sj;
+
+/**
+ * @author HP
+ *
+ */
+public class StringEnhancer {
+	
+	MsgFactory mf;
+	
+	
+	    public String capitalizeString() {
+	    	
+	    	    String  toCaps = mf.getNextMsg();
+	    	    
+	    	        return  toCaps.toUpperCase();
+	    	
+	    }
+	    
+	    
+	    
+	    public String capitalizeFirstLtr() {
+	    	
+	    	String  toCapsFirstLtr = mf.getNextMsg();
+	    	
+	    	return toCapsFirstLtr.
+	    	
+	    }
+	
+
+}

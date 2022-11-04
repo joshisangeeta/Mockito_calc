@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ProductServiceIntegrationTest" project="RestTemplateDemo" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sj.resttemplate.ProductServiceIntegrationTest" time="0.0" displayname="ProductServiceIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:com.sj.resttemplate.ProductServiceIntegrationTest]">
+    <testcase name="testGetProduct" classname="com.sj.resttemplate.ProductServiceIntegrationTest" time="0.0" displayname="testGetProduct()" uniqueid="[engine:junit-jupiter]/[class:com.sj.resttemplate.ProductServiceIntegrationTest]/[method:testGetProduct()]"/>
+  </testsuite>
+</testrun>

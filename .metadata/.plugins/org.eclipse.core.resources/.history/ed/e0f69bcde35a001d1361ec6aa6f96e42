@@ -1,0 +1,43 @@
+package com.sj.resttemplate;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.Bean;
+
+import com.sj.resttemplate.service.ProductService;
+import com.sj.resttemplate.service.ProductServiceImpl;
+
+class ProductServiceIntegrationTest {
+
+	
+	 @TestConfiguration
+	    static class ProductServiceImplTestContextConfiguration {
+	 
+	        @Bean
+	        public ProductService productService() {
+	            return new ProductServiceImpl();
+	        }
+	    }
+
+	    @Autowired
+	    private EmployeeService employeeService;
+
+	    @MockBean
+	    private EmployeeRepository employeeRepository;
+	
+	
+	
+	
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@Test
+	void testGetProduct() {
+		fail("Not yet implemented");
+	}
+
+}

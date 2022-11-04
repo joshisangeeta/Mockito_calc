@@ -1,0 +1,28 @@
+package com.sj;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.sj.service.ReviewService;
+
+@SpringBootTest
+class BookManagementDemoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+	
+	
+	   @Autowired
+	   ReviewService reviewService;
+	
+	   
+	
+	
+	
+	
+	
+	
+
+}

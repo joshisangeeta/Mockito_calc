@@ -1,0 +1,44 @@
+package com.sj;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.sj.service.BookService;
+import com.sj.service.ReviewService;
+
+@SpringBootTest
+@ActiveProfiles("test")
+//@RunWith(SpringJUnit4ClassRunner.class)
+public class BookManagementDemoApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+	
+	
+	   @Autowired
+	   ReviewService reviewService;
+	
+	   @Autowired
+	   BookService bookService;
+	
+	
+	   @Test
+	   public void whenBookIdIsProvided_thenRetrievedNameIsCorrect() {
+	      Mockito.when(bookService.getTitle(1)).thenReturn("Mock Book Name");
+	      String title = reviewService.getBookTitleById(1);
+	      assertEquals("Mock Book Name", title);
+	   }
+	
+	
+	
+	
+	
+
+}
